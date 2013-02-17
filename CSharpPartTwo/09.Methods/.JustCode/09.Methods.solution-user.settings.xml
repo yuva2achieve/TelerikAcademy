@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="3c073546-0f75-4071-b648-5efb24d60e3b">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\08.SumTwoArraysOfDigits\SumTwoArraysOfDigits.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\08.SumTwoArraysOfDigits\08.SumTwoArraysOfDigits.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '8.SumTwoArraysOfDigits'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\01.PrintUserName\PrintUserName.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\01.PrintUserName\01.PrintUserName.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.PrintUserName'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\02.PrintBiggestOfThreeIntegers\PrintBiggestOfThreeIntegers.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\02.PrintBiggestOfThreeIntegers\02.PrintBiggestOfThreeIntegers.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.PrintBiggestOfThreeIntegers'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\03.PrintLastDigitInEnglish\PrintLastDigitInEnglish.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\03.PrintLastDigitInEnglish\03.PrintLastDigitInEnglish.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.PrintLastDigitInEnglish'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\04.CountNumberInArray\CountNumberInArray.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\04.CountNumberInArray\04.CountNumberInArray.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '4.CountNumberInArray'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\05.CompareNeighbourElements\CompareNeighbourElements.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\05.CompareNeighbourElements\05.CompareNeighbourElements.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '5.CompareNeighbourElements'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\06.ReturnIndexOfElement\ReturnIndexOfElement.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\06.ReturnIndexOfElement\06.ReturnIndexOfElement.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '6.ReturnIndexOfElement'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\07.ReverseDigitsOfNumber\ReverseDigitsOfNumber.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\07.ReverseDigitsOfNumber\07.ReverseDigitsOfNumber.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '7.ReverseDigitsOfNumber'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\09.MaxElementInArray\MaxElementInArray.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\09.MaxElementInArray\09.MaxElementInArray.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '9.MaxElementInArray'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '9.MaxElementInArray'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\10.CalculateFactorial\CalculateFactorial.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\10.CalculateFactorial\10.CalculateFactorial.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '0.CalculateFactorial'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\11.AddPolynomials\AddPolynomials.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\11.AddPolynomials\11.AddPolynomials.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.AddPolynomials'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\12.SubstractionAndMultiplication\SubstractionAndMultiplication.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\12.SubstractionAndMultiplication\12.SubstractionAndMultiplication.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.SubstractionAndMultiplication'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\13.SolveTasks\SolveTasks.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\13.SolveTasks\13.SolveTasks.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.SolveTasks'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\14.SolveМanyTasks\SolveМanyTasks.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\14.SolveМanyTasks\14.SolveМanyTasks.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '4.SolveМanyTasks'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\15.UseGenericMethods\UseGenericMethods.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\09.Methods\15.UseGenericMethods\15.UseGenericMethods.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '5.UseGenericMethods'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

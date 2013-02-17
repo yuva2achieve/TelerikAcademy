@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="24c9304d-cc10-42d6-a055-baee9dc8ffe6">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\01.PrintOddLines\PrintOddLines.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\01.PrintOddLines\01.PrintOddLines.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.PrintOddLines'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\02.TwoFilesToOne\TwoFilesToOne.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\02.TwoFilesToOne\02.TwoFilesToOne.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.TwoFilesToOne'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\03.LineNumbers\LineNumbers.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\03.LineNumbers\03.LineNumbers.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.LineNumbers'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\04.CompareTextFiles\CompareTextFiles.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\04.CompareTextFiles\04.CompareTextFiles.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '4.CompareTextFiles'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\05.AreaOfMaxSum\AreaOfMaxSum.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\05.AreaOfMaxSum\05.AreaOfMaxSum.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '5.AreaOfMaxSum'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\06.SortFile\SortFile.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\06.SortFile\06.SortFile.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '6.SortFile'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\07.ReplaceSubstrings\ReplaceSubstrings.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\07.ReplaceSubstrings\07.ReplaceSubstrings.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '7.ReplaceSubstrings'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\08.ReplaceWords\ReplaceWords.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\08.ReplaceWords\08.ReplaceWords.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '8.ReplaceWords'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\09.DeleteOddLines\DeleteOddLines.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\09.DeleteOddLines\09.DeleteOddLines.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '9.DeleteOddLines'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\10.GetTextFromXml\GetTextFromXml.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\10.GetTextFromXml\10.GetTextFromXml.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '0.GetTextFromXml'</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '0.GetTextFromXml'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\11.DeleteWords\DeleteWords.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\11.DeleteWords\11.DeleteWords.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.DeleteWords'</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.DeleteWords'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\12.RemoveListedWords\RemoveListedWords.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\12.RemoveListedWords\12.RemoveListedWords.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.RemoveListedWords'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\13.CountWords\CountWords.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\13.TextFiles\13.CountWords\13.CountWords.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.CountWords'</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.CountWords'</Text>
+          <Line>8</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>
