@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="121a3093-71c1-4c1f-8362-0e5c581dc985">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\Teacher.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\Program.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>24</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>24</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>20</Column>
+          <Text>Split declaration and initialization</Text>
+          <Line>24</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>20</Column>
+          <Text>Variable &lt;/C&gt;testSchool&lt;//C&gt; is only assigned to</Text>
+          <Line>24</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>17</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>17</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Split declaration and initialization</Text>
+          <Line>17</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Variable &lt;/C&gt;testStudentOne&lt;//C&gt; is only assigned to</Text>
+          <Line>17</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Variable &lt;/C&gt;testStudentOne&lt;//C&gt; is only assigned to</Text>
+          <Line>17</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Variable &lt;/C&gt;testStudentTwo&lt;//C&gt; is only assigned to</Text>
+          <Line>18</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>20</Column>
+          <Text>Variable &lt;/C&gt;testSchool&lt;//C&gt; is only assigned to</Text>
+          <Line>24</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>20</Column>
+          <Text>Split declaration and initialization</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>20</Column>
+          <Text>Variable &lt;/C&gt;testSchool&lt;//C&gt; is only assigned to</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>19</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Use 'var'</Text>
+          <Line>19</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Split declaration and initialization</Text>
+          <Line>19</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Variable &lt;/C&gt;testStudentTwo&lt;//C&gt; is only assigned to</Text>
+          <Line>19</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\School.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\Student.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\Person.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\SchoolClass.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\Discipline.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\ICommentable.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\01.School\01.School.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.School'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\Program.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\02.HumanAbstraction.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.HumanAbstraction'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.HumanAbstraction'</Text>
+          <Line>1</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\Worker.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\02.HumanAbstraction.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.HumanAbstraction'</Text>
+          <Line>1</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\Student.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\02.HumanAbstraction.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.HumanAbstraction'</Text>
+          <Line>1</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\Human.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\02.HumanAbstraction\02.HumanAbstraction.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.HumanAbstraction'</Text>
+          <Line>1</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Program.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Animal.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\ISound.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>1</Column>
+          <Text>This using directive is not required</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Dog.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Frog.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Cat.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\Tomcat.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\04.OOPPrinciplesPartOne\03.Animals\03.Animals.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.Animals'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>
