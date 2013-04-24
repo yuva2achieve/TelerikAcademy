@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="11b7d269-4436-4e11-8548-aecd89109069">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\GSMCallHistoryTest\GSMCallHistoryTest.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\GSMCallHistoryTest\GSMCallHistoryTest.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name 'GsmCallHistoryTest'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name 'GsmCallHistoryTest'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\GSMTest\GSMTest.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\GSMTest\GSMTest.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name 'GsmTest'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name 'GsmTest'</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\MobilePhone.Common\Battery.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\MobilePhone.Common\MobilePhone.Common.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Type name does not match file name</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\MobilePhone.Common\GSM.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\OOP\01.DefiningClassesPartOne\MobilePhone.Common\MobilePhone.Common.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Name does not match the naming convention. Suggested name 'Gsm'</Text>
+          <Line>8</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>24</Column>
+          <Text>Name does not match the naming convention. Suggested name 'PhoneBattery'</Text>
+          <Line>10</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>24</Column>
+          <Text>Name does not match the naming convention. Suggested name 'PhoneDisplay'</Text>
+          <Line>11</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="2a33792c-76ca-4ea1-a61e-fba64fa63e62">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\01.SquareRoot\SquareRoot.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\01.SquareRoot\01.SquareRoot.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '1.SquareRoot'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\02.ReadNumber\ReadNumber.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\02.ReadNumber\02.ReadNumber.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '2.ReadNumber'</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\03.ReadAndPrintFile\ReadAndPrintFile.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\03.ReadAndPrintFile\03.ReadAndPrintFile.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '3.ReadAndPrintFile'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\04.DownloadFile\DownloadFile.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\C# Part Two\12.ExceptionHandling\04.DownloadFile\04.DownloadFile.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>11</Column>
+          <Text>Name does not match the naming convention. Suggested name '4.DownloadFile'</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>
