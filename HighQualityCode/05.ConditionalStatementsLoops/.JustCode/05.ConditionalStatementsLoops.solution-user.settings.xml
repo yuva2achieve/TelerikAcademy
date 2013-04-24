@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="d48ae2b7-18eb-4876-a7ae-4d12db4dcb86">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings Version="2">
+      <FilePath>
+        <FileRelativePath>01.Chef/Chef.cs</FileRelativePath>
+        <ProjectRelativePath>01.Chef/01.Chef.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>12476857711816151261</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>01.Chef/Bowl.cs</FileRelativePath>
+        <ProjectRelativePath>01.Chef/01.Chef.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>12476857711816151261</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>9190054705308605007</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>01.Chef/Potato.cs</FileRelativePath>
+        <ProjectRelativePath>01.Chef/01.Chef.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>12476857711816151261</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>01.Chef/Carrot.cs</FileRelativePath>
+        <ProjectRelativePath>01.Chef/01.Chef.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>12476857711816151261</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>01.Chef/Vegetable.cs</FileRelativePath>
+        <ProjectRelativePath>01.Chef/01.Chef.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>12476857711816151261</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>02.FindValue/MainClass.cs</FileRelativePath>
+        <ProjectRelativePath>02.FindValue/02.FindValue.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>4169135702174833893</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

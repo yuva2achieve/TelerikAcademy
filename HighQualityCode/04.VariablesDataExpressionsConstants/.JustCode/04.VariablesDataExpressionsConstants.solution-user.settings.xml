@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="ad7c9a30-25cf-495f-9db0-584c5cf0934c">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings Version="2">
+      <FilePath>
+        <FileRelativePath>01.RotateFigure/Figure.cs</FileRelativePath>
+        <ProjectRelativePath>01.RotateFigure/01.RotateFigure.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>10609407090914491133</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>02.Statistics/Statistics.cs</FileRelativePath>
+        <ProjectRelativePath>02.Statistics/02.Statistics.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>10245061864355435221</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>12818552159277353821</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="55dda71c-aaa6-4d6e-992e-72d6a241808b">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings Version="2">
+      <FilePath>
+        <FileRelativePath>01.ConsolePrinter/ConsolePrinter.cs</FileRelativePath>
+        <ProjectRelativePath>01.ConsolePrinter/01.ConsolePrinter.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>3960998578484810500</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>363657157149469693</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>4989399296858529127</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>02.Human/MainClass.cs</FileRelativePath>
+        <ProjectRelativePath>02.Human/02.Human.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>7775274103582507295</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>1613143400083210263</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>10241890720663903349</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>03.MineSweeper/MineSweeper.cs</FileRelativePath>
+        <ProjectRelativePath>03.MineSweeper/03.MineSweeper.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>22122424221469973</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>03.MineSweeper/MineSweeper.cs</FileRelativePath>
+        <ProjectRelativePath>03.MineSweeper/04.MineSweeper.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>17807052060853612885</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>22122424221469973</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>
