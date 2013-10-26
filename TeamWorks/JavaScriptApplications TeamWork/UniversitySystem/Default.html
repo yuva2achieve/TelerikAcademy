@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link href="Styles/KendoBlueOpal.css" rel="stylesheet" />
+        <link id="size-stylesheet" href="Styles/University.css" rel="stylesheet" />
+        <link href="Styles/kendo.common.min.css" rel="stylesheet" />
+        <link href="Styles/kendo.default.min.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="Scripts/kendo.custom.min.js"></script>
+        <script src="Scripts/MongoLab.js"></script>
+        <script src="Scripts/University.js"></script>
+        <script src="Scripts/Functionalities.js"></script>
+
+    </head>
+    <script>
+        //widescreen style chooser
+        function adjustStyle(width, height) {
+            width = parseInt(width);
+            height = parseInt(height);
+            if ((width / height) >= 16 / 10) {
+                $("#size-stylesheet").attr("href", "Styles/University.css");
+            }
+            else {
+                $("#size-stylesheet").attr("href", "Styles/University43.css");
+            }
+        }
+        
+        $(function () {
+            adjustStyle($(this).width(), $(this).height());
+            $(window).resize(function () {
+                adjustStyle($(this).width(), $(this).height());
+            });
+        });
+        
+        $(function () {
+            var mongoDB = new MongoLab('KR-YVgnAgQztphU54zK9Qu-20PzjdLj5');
+        
+            //list databases
+            //mongoDB.listDatabases(function (data) {
+            //    console.log('List Databases : ', data);
+            //});
+        
+            //list collections
+            mongoDB.listCollections('universitysystem', function (data) {
+                console.log('List Collections : ', data);
+            });
+        
+            ////list documents
+            //mongoDB.listDocuments('universitysystem', 'StudentName', { sk: 0, l: 20 }, function (data) {
+            //    console.log('List Documents : ', data);
+            //});
+        
+            ////insert documents
+            //mongoDB.insertDocuments('universitysystem', 'StudentName', { JSLIBTEST: 'testing' }, function (data) {
+            //	console.log('Insert Documents : ', data);
+            //});
+        
+            ////delete document
+            //mongoDB.deleteDocument('universitysystem', 'StudentName', '51b86df7e4b01c4e030d650a', function (data) {
+            //   console.log('Delete Document : ', data);
+            //});
+        
+            //var st = new universitySystem.Student("fname", "lname", "none@none.no");
+            //var ass = new universitySystem.Assistant("fname", "lname");
+            //console.log(st.workLoad());
+            //console.log(ass.fullname());
+        
+            var students = [];
+            var universities = [];
+            var studentNames = [];
+            var cityNames = [];
+
+            mongoDB.listDocuments('universitysystem', 'University', function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    universities.push(data[i]);
+                }
+            });
+
+            mongoDB.listDocuments('universitysystem', 'Student', function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var stud = new universitySystem.Student(data[i]._id, data[i].firstName, data[i].lastName, data[i].email, data[i].address, data[i].city, data[i].phoneNumber, data[i].age);
+                    students.push(stud);
+                }
+            });
+
+            mongoDB.listDocuments('universitysystem', 'StudentName', function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    studentNames.push(data[i]);
+                }
+            });
+
+            mongoDB.listDocuments('universitysystem', 'CityName', function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    cityNames.push(data[i]);
+                }
+            });
+
+            var newStudents = [];
+
+            var dataSourceAddStudents = new kendo.data.DataSource({
+                data: newStudents,
+                pageSize: 5
+            });
+
+            var viewModelAddStudents = kendo.observable({
+                dataSource: dataSourceAddStudents
+            });
+
+            kendo.bind($("#grdAddStudents"), viewModelAddStudents);
+
+            var dataSourceStudents = new kendo.data.DataSource({
+                data: students,
+                pageSize: 5
+            });
+
+            var viewModelStudents = kendo.observable({
+                dataSource: dataSourceStudents
+            });
+
+            kendo.bind($("#grdStudents"), viewModelStudents);
+
+            // students autocomplete
+            $(function () {
+                $("#acStudents").kendoAutoComplete({
+                    dataSource: dataSourceStudents,
+                    dataTextField: "fullname()",
+                    filter: "startswith",
+                    placeholder: "Search Students...",
+                    change: function (e) {
+                        var selectedCountry = this.value();
+                        var kgrd = $("#grdStudents").data("kendoGrid");
+                        if (selectedCountry) {
+                            kgrd.dataSource.filter({
+                                field: "fullname()",
+                                operator: "startswith",
+                                value: selectedCountry
+                            });
+                        }
+                        else {
+                            kgrd.dataSource.filter({});
+                        }
+                    }
+                });
+            });
+
+            kendo.bind($("#acStudents"), viewModelStudents);
+
+            // DataSouceUniversities
+            var dataSourceUniversities = new kendo.data.DataSource({
+                data: universities
+            });
+
+            var viewModelUniversities = kendo.observable({
+                dataSource: dataSourceUniversities
+            });
+
+            $("#ddlUniversity").kendoDropDownList({
+                dataSource: dataSourceUniversities,
+                dataTextField: "name",
+                dataValueField: "name",
+                autoBind: false,
+                index: 1,
+            });
+
+            kendo.bind($("#ddlUniversity"), viewModelUniversities);
+
+            // add Students
+            $("#btnAddStudents").click(function () {
+                var studentsCount = $("#txtStudentsCount").val();
+                newStudents = [];
+                functionalities.addStudents(studentsCount, studentNames, cityNames, mongoDB, function (data) {
+                    var stud = new universitySystem.Student(data._id, data.firstName, data.lastName, data.email, data.address, data.city, data.phoneNumber, data.age);
+                    viewModelAddStudents.dataSource.add(stud);
+                    viewModelStudents.dataSource.add(stud);
+                });
+                $('#grdAddStudents').show();
+            });
+
+            // add Universities
+            $("#btnAddUniversity").click(function () {
+                var nameOfUniversity = $("#txtAddUniversity").val();
+                var university = functionalities.addUniversity(nameOfUniversity, mongoDB, function (data) {
+                    universities.push(data);
+                });
+            });
+
+            //buttons toggle from images
+            $('#searchButton').click(function () {
+                if ($('#pnlSearchStudents').css('display') == 'none') {
+                    $('.panel').hide();
+                }
+                $('#pnlSearchStudents').toggle();
+                $('#grdStudents').toggle();
+            });
+
+            $('#addStudentsButton').click(function () {
+                if ($('#pnlAddStudents').css('display') == 'none') {
+                    $('.panel').hide();
+                }
+                $('#pnlAddStudents').toggle();
+                $('#grdAddStudents').hide();
+            });
+
+            $('#addUniversityButton').click(function () {
+                if ($('#pnlAddUniversity').css('display') == 'none') {
+                    $('.panel').hide();
+                }
+                $('#pnlAddUniversity').toggle();
+            });
+        });
+    </script>
+    <body>
+        <div id="grdStudents" class="panel"
+             data-resizable="true"
+             data-role="grid"
+             data-sortable="true"
+             data-pageable="true"
+             data-height="213"
+             data-columns='[{"field": "_id.$oid", "title": "Id"}, {"field": "fullname()", "title": "Full Name"}, {"field": "city", "title": "City"}, {"field": "age", "title": "Age"}]'
+             data-bind="source: dataSource">
+        </div>
+
+        <!--Students Names Autocomplete -->
+        <div id="pnlSearchStudents" class="panel">
+            <p>
+                <label for="acStudents">Search Student by Name:</label>
+                <br />
+                <input id="acStudents" class="k=input" placeholder="Start typing ..." />
+            </p>
+        </div>
+
+        <!--University dropdown -->
+        <div id="pnlUniversity">
+            <p>
+                <label for="universityDropDown">Choose University:</label>
+                <br />
+                <input id="ddlUniversity" placeholder="Choose University" />
+            </p>
+        </div>
+
+        <!--Add University  - no simple text input in kendo so workaround with autocomplete-->
+        <div id="pnlAddUniversity" class="panel">
+            <p>
+                <label for="txtAddUniversity">Add University:</label>
+                <br />
+                <span tabindex="-1" role="presentation" class="k-widget k-autocomplete k-header k=input k-state-default" style="">
+                    <input style="width:188px; height: 21px;" id="txtAddUniversity" class="k=input" />
+                </span>
+                <button id="btnAddUniversity" class="k-button"  type="submit">Add University</button>
+            </p>
+
+        </div>
+
+        <!--Add Students -->
+        <div id="pnlAddStudents" class="panel">
+            <p>
+                <label for="txtStudentsCount">Enter number of students to add:</label>
+                <br />
+                <span tabindex="-1" role="presentation" class="k-widget k-autocomplete k-header k=input k-state-default" style="">
+                    <input style="width:188px; height: 21px;" id="txtStudentsCount"  />
+                </span>
+                <button id="btnAddStudents" class="k-button"  type="submit">Add Students</button>
+            </p>
+        </div>
+
+        <div id="grdAddStudents" class="panel"
+             data-resizable="true"
+             data-role="grid"
+             data-sortable="true"
+             data-pageable="true"
+             data-height="213"
+             data-columns='[{"field": "_id.$oid", "title": "Id"}, {"field": "fullname()", "title": "Full Name"}, {"field": "city", "title": "City"}, {"field": "age", "title": "Age"}]'
+             data-bind="source: dataSource">
+        </div>
+
+        <!--fb share with FB App - при вас може да дава грешка, защото съм го вързала localhost-->
+        <!--като го качиш в kiwi.saykor.com ще сменя урл-то и ще се оправи-->
+        <!--по-долу има само бутони, ако прецените че е по-добре само с бутони без App-->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                // init the FB JS SDK
+                FB.init({
+                    appId: '169566503218420', // App ID from the App Dashboard
+                    // channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
+                    status: true, // check the login status upon init?
+                    cookie: true, // set sessions cookies to allow your server to access the session?
+                    xfbml: true  // parse XFBML tags on this page?
+                });
+            
+                // Additional initialization code such as adding Event Listeners goes here
+                FB.ui(
+                    {
+                    method: 'feed',
+                    name: 'Kiwi Project', // name of the product or content you want to share
+                    link: 'http://kiwi.saykor.com', // link back to the product or content you are sharing
+                    picture: 'http://kiwi.saykor.com/Images/bg.jpg', // path to an image you would like to share with this content
+                    caption: 'Reference Documentation', // caption
+                    description: 'Single Page JS App' // description of your product or content
+                },
+                    function (response) {
+                        if (response && response.post_id) {
+                            alert('Post was published.');
+                        }
+                        else {
+                            alert('Post was not published.');
+                        }
+                    }
+                    );
+            };
+            
+            // Load the SDK Asynchronously
+            function fb_callout() {
+                (function (d) {
+                    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement('script');
+                    js.id = id;
+                    js.async = true;
+                    js.src = "//connect.facebook.net/en_US/all.js";
+                    ref.parentNode.insertBefore(js, ref);
+                }(document));
+            }
+        </script>
+
+         <img alt="Share This Page" src="http://www.linkweb.ca/images/facebook-share-icon.gif" onclick="fb_callout();" />
+
+        <!--Simple share buttons-->
+        <ul>
+            <li>
+                <a href="http://www.facebook.com/sharer.php?u=http://kiwi.saykor.com/&t=University-System" target="_blank">
+                    <img src="buttons/fb-share.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/home?status=http://kiwi.saykor.com/" title="Click to share this post on Twitter" target="_blank">
+                    <img src="buttons/t-share.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/share?url=http://kiwi.saykor.com/" target="_blank">
+                    <img src="buttons/g-share.png">
+                </a>
+            </li>
+        </ul>
+
+        <img id="searchButton" src="Images/search.png" title="Search students"/>
+        <img id="addUniversityButton" src="Images/addUni.png" title="Add new university" />
+        <img id="addStudentsButton" src="Images/addNew.png" title="Add new students"/>
+
+    </body>
+</html>

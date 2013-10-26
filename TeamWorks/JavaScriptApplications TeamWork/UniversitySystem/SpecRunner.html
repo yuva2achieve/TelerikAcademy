@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="Styles/jasmine.css">
+  <script type="text/javascript" src="Scripts/jasmine.js"></script>
+  <script type="text/javascript" src="Scripts/jasmine-html.js"></script>
+  <script type="text/javascript" src="Scripts/jasmine.async.js"></script>
+
+  <!-- include source files here... -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="Scripts/kendo.custom.min.js"></script>
+  <script type="text/javascript" src="Scripts/University.js"></script>
+  <script type="text/javascript" src="Scripts/MongoLab.js"></script>
+  <script type="text/javascript" src="Scripts/Functionalities.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="Tests/University.Tests.js"></script>
+  <script type="text/javascript" src="Tests/Functionalities.Tests.js"></script>
+  <script type="text/javascript" src="Tests/Geolocation.Tests.js"></script>
+  <script type="text/javascript" src="Tests/Student.Tests.js"></script>
+  <script type="text/javascript" src="Tests/Teacher.Tests.js"></script>
+  <script type="text/javascript" src="Tests/Assistant.Tests.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var htmlReporter = new jasmine.HtmlReporter();
+
+      jasmineEnv.addReporter(htmlReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

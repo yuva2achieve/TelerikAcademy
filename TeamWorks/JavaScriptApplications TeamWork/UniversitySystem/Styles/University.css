@@ -1,0 +1,78 @@
+﻿body {
+     background: url('../Images/bg.jpg') no-repeat scroll;
+     background-size: 100%;
+}
+
+#pnlUniversity {
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    color:white;
+}
+
+#pnlSearchStudents {
+    position:fixed;
+    top:55%;
+    left:45%;
+    display:none;
+    color:white;
+}
+
+#pnlAddUniversity {
+    position:fixed;
+    top:55%;
+    left:42%;
+    display:none;
+    color:white;
+}
+
+#pnlAddStudents {
+    position:fixed;
+    top:55%;
+    left:42%;
+    display:none;
+    color:white;
+}
+
+#grdStudents {
+    display:none;
+    position:fixed;
+    width:40%;
+    bottom:14%;
+    left:30%;
+    font-size:12px;
+}
+
+#searchButton {
+    position:fixed;
+    bottom:0;
+    right:14%;
+    height:20%;
+}
+
+#addStudentsButton {
+    position:fixed;
+    bottom:0;
+    right:7%;
+    height:20%;
+}
+
+#addUniversityButton {
+    position:fixed;
+    bottom:0;
+    right:0;
+    height:20%;
+}
+
+#grdAddStudents {
+    display:none;
+    position:fixed;
+    width:40%;
+    bottom:14%;
+    left:30%;
+    font-size:12px;
+}
+
+.k-header #grdStudents{
+    font-size:12px;
+}
