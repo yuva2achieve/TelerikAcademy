@@ -38,27 +38,7 @@ Your task is to generate a PDF aggregated report summarizing the sales from all 
 
 Problem #3 – Generate XML Sales Report by Vendors
 --------------------------------------------------
-Your task is to create a C# program to generate aggregated sales report by dates in XML format like the sample below:
-
-<?xml version="1.0" encoding="utf-8">
-<sales>
-  <sale vendor="Nestle Sofia Corp.">
-	<summary date="20-Jul-2013" total-sum="54.75" />
-	<summary date="21-Jul-2013" total-sum="40.35" />
-	<summary date="20-Jul-2013" total-sum="40.60" />
-  </sale>
-  <sale vendor="Targovishte Bottling Company Ltd.">
-	<summary date="20-Jul-2013" total-sum="150.20" />
-	<summary date="21-Jul-2013" total-sum="709.30" />
-	<summary date="20-Jul-2013" total-sum="249.40" />
-  </sale>
-  <sale vendor="Zagorka Corp.">
-	<summary date="20-Jul-2013" total-sum="144.80" />
-	<summary date="21-Jul-2013" total-sum="341.59" />
-	<summary date="20-Jul-2013" total-sum="385.80" />
-  </sale>
-<sales>
-	
+Your task is to create a C# program to generate aggregated sales report by dates in XML format.
 Save the report in a file named “Sales-by-Vendors-report.xml”.
 
 Problem #4 – Product Reports
@@ -67,53 +47,18 @@ Your task is to write a program to create a product report for each product in J
 
 Problem #5 – Load Vendor Expenses from XML
 ------------------------------------------
-You are given an XML file Vendors-Expenses.xml holding the expenses of all vendors by months in the following format: 
-
-<?xml version="1.0" encoding="utf-8">
-<sales>
-  <sale vendor="Nestle Sofia Corp.">
-	<expenses month="Jul-2013">30.00</expenses>
-	<expenses month="Aug-2013">40.00</expenses>
-  </sale>
-  <sale vendor="Targovishte Bottling Company Ltd.">
-	<expenses month="Jul-2013">200.00</expenses>
-	<expenses month="Aug-2013">180.00</expenses>
-  </sale>
-  <sale vendor="Zagorka Corp.">
-	<expenses month="Jul-2013">120.00</expenses>
-	<expenses month="Aug-2013">180.00</expenses>
-  </sale>
-<sales>
-	
+You are given an XML file Vendors-Expenses.xml holding the expenses of all vendors by months.
 Your task is to read the expenses XML file, parse it and save the expenses in the MongoDB database and in the SQL Server. Please think how your database schema / document model will support expenses.
 
 Problem #6 – Vendors Total Report
 ----------------------------------
-You are given a SQLite database holding the taxes for each product in the following format:
-
- |----------------------------|
- |Product Name          |  Tax|
- |----------------------|-----|
- |Beer “Beck’s”         |  20%|
- |----------------------|-----|
- |Beer “Zagorka”        |  20%|
- |----------------------|-----|
- |Chocolate “Milka”     |  18%|
- |----------------------|-----|
- |Vodka “Targovishte”   |  25%|
- |----------------------------|
- 
- Write a program to read the MongoDB database of product reports, load the products into SQLite and generate a single Excel file called “Products-Total-Report.xlsx” holding the following information for the current month (e.g. July 2013):
- 
-|-----------------------------------------------------------------------------------------------|
-| Vendor								Incomes		Expenses		Taxes		Financial Result|
-|-----------------------------------------------------------------------------------------------|
-| NestleSofia Corp.						135.70		30				24.43		81.27           |
-|-----------------------------------------------------------------------------------------------|
-| Targovishte Bottling Company Ltd.		1155.90		200				288.98		666.92          |
-|-----------------------------------------------------------------------------------------------|
-| Zagorka Corp.							872.19		120				174.44		577.75          |
-|-----------------------------------------------------------------------------------------------|
+You are given a SQLite database holding the taxes for each product.
+Write a program to read the MongoDB database of product reports, load the products into SQLite and generate a single Excel file called “Products-Total-Report.xlsx” holding the following information for the current month (e.g. July 2013):
+* Vendor 
+* Incomes
+* Expenses
+* Taxes
+* Financial Result
 
 Additional Requirements
 -----------------------
