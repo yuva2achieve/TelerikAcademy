@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Underscore.js homework</title>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+    <script src="Scripts/homework.js"></script>
+</head>
+<body>
+    <script>
+        var Student = Class.create({
+            init: function (firstName, lastName, age, mark) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.mark = mark;
+            },
+            toString: function () {
+                return this.firstName + " " + this.lastName + " Age: " + this.age + " Mark: " + this.mark;
+            }
+        });
+
+        var students = [
+            new Student("Ivan", "Ivanov", 22, 5),
+            new Student("Petar", "Petrov", 21, 4),
+            new Student("Georgi", "Georgiev", 23, 6),
+            new Student("Georgi", "Atanasov", 23, 3)
+        ];
+
+        console.log("----------Task 1----------")
+        Homework.task1(students);
+
+        console.log("----------Task 2----------")
+        Homework.task2(students);
+
+        console.log("----------Task 3----------")
+        Homework.task3(students);
+
+        var Animal = Class.create({
+            init: function (species, type, numberOfLegs) {
+                this.species = species;
+                this.type = type;
+                this.numberOfLegs = numberOfLegs;
+            },
+            toString: function () {
+                return this.species + " " + this.type + " " + this.numberOfLegs;
+            }
+        });
+
+        var animals = [
+            new Animal("insect", "spider", 8),
+            new Animal("mammal", "monkey", 2),
+            new Animal("mammal", "tiger", 4),
+            new Animal("insect", "ant", 4)
+        ];
+
+
+        console.log("----------Task 4----------")
+        Homework.task4(animals);
+
+        console.log("----------Task 5----------")
+        Homework.task5(animals);
+
+        console.log("----------Task 6----------")
+        var Book = Class.create({
+            init: function (title, author) {
+                this.title = title;
+                this.author = author;
+            },
+            toString: function () {
+                return this.title + " by " + this.author;
+            }
+        });
+
+        var books = [
+            new Book("Pod igoto", "Ivan Vazov"),
+            new Book("Do Chicago i nazad", "Aleko Konstantinov"),
+            new Book("Bai Ganio", "Aleko Konstantinov")
+        ];
+
+        Homework.task6(books);
+
+        console.log("----------Task 7----------")
+        Homework.task7(students);
+    </script>
+</body>
+</html>

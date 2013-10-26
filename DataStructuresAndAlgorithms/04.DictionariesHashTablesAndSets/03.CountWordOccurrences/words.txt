@@ -1,0 +1,3 @@
+This IS some text.THIS TEXT is Random.
+It is really RANDOM.
+it IS usefull only for tests.

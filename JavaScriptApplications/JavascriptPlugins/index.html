@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>TreeView Plugin</title>
+	<style type="text/css">
+		body{
+			width: 500px;
+			margin: 0px;
+			padding: 0px;
+			font-family: "Verdana";
+			font-size: 16px;
+		}
+
+		ul{
+			list-style: none;
+		}
+
+		li{
+			padding: 5px;
+		}
+
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		span{
+			background-image: url("images/expand.png");
+			background-repeat: no-repeat;
+		}
+
+		span:hover{
+			cursor: hand;
+		}
+
+		span.expanded{
+			background-image: url("images/collapse.png");
+			background-repeat: no-repeat;
+		}
+	</style>
+	<script type="text/javascript" src="scripts\jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="scripts\treeview.js"></script>
+</head>
+<body>
+	
+	<ul class="treeview">
+		<li>
+			<span>&nbsp;&nbsp;</span>
+			<a href="#">List</a>
+			<ul>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub list</a>
+					<ul>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub list</a>
+					<ul>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+						<li>
+							<span>&nbsp;&nbsp;</span>
+							<a href="#">Sub sub item</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub item</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<span>&nbsp;&nbsp;</span>
+			<a href="#">Item</a>
+		</li>
+		<li>
+			<span>&nbsp;&nbsp;</span>
+			<a href="#">List</a>
+			<ul>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub item</a>
+				</li>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub item</a>
+				</li>
+				<li>
+					<span>&nbsp;&nbsp;</span>
+					<a href="#">Sub item</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<script>
+		$(document).ready(function () {
+			$(".treeview").getTreeView();
+		});
+	</script>
+</body>
+</html>

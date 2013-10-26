@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Calculate";
+}
+
+<h2>Calculate</h2>
+<form action="~/Home/Calculate" method="post">
+    <input name="value" type="text" />
+    <select name="type">
+        @for (int i = 0; i < ViewBag.types.Count; i++)
+        {
+            <option value="@i">@ViewBag.types[i]</option>
+        }
+    </select>
+    <input value="Calculate" type="submit" />
+</form>

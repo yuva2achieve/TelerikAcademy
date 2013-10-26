@@ -1,0 +1,28 @@
+﻿@model MoviesApplication.ViewModels.MovieDetailsModel
+
+@{
+    ViewBag.Title = "MovieDetails";
+}
+
+<h2>MovieDetails</h2>
+<div class="well">
+    <div class="row">
+        <div class="span4">
+            <img class="img-rounded" alt="260x180" style="width: 170px; height: 190px;" src="http://placehold.it/170x190">
+        </div>
+        <div class="span5">
+            <h2>@Model.Title <span>(@Model.Year)</span></h2>
+            <p>@Model.Description</p>
+            <span>Rated <strong>@Model.Rating</strong>/10 by @Model.Reviews.Count users</span>
+        </div>
+    </div>
+</div>
+@Html.ActionLink("Add review", "Create", "Reviews", new { movieId = Model.Id }, new { @class = "btn" })
+@if (Model.Reviews.Count > 0)
+{
+    @Html.Partial("_MovieReviews", Model.Reviews)
+}
+else
+{
+    <p>No reviews yet!</p>
+}

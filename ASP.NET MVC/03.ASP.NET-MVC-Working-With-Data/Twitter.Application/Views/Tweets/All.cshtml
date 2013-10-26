@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Twitter.Models.Tweet>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<div class="row-fluid">
+    <div class="span5"></div>
+    <div class="span4"><h2>All tweets</h2></div>
+</div>
+@Html.Partial("_ListTweets", Model);
+

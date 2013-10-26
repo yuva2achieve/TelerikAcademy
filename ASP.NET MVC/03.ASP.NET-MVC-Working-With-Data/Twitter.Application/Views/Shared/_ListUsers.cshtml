@@ -1,0 +1,22 @@
+﻿@model ICollection<Twitter.Models.ApplicationUser>
+
+@if (Model.Count > 0)
+{
+    foreach (var user in Model)
+    {
+        <div class="row-fluid">
+            <div class="span3"></div>
+            <div class="span6">
+                <div>
+                    <img src="@user.ProfilePicture" width="48" height="48" alt="Alternate Text" />
+                    <strong>@Html.ActionLink(user.FullName, "Profile", "Users", new { username = user.UserName }, null)</strong>
+                    <span>&nbsp;@@@user.UserName</span>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>No users</p>
+}

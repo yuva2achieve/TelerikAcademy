@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/01.SchoolSystemClassicalOOP.js"></script>
+    <script src="Scripts/02.SchoolSystemPrototypeOOP.js"></script>
+</head>
+<body>
+    <script>
+        // Classical OOP tests
+        var student1 = new classicalSchoolSystemNS.Student("Ivan", "Ivanov", "19", "2");
+        console.log(student1.introduce())
+
+        var student2 = new classicalSchoolSystemNS.Student("Georgi", "Ivanov", "17", "5");
+        console.log(student2.introduce())
+
+        var teacher = new classicalSchoolSystemNS.Teacher("Petar", "Petrov", "35", "Math");
+        console.log(teacher.introduce());
+
+        var schoolClass = new classicalSchoolSystemNS.SchoolClass("Math", teacher);
+        schoolClass.addStudent(student1);
+        schoolClass.addStudent(student2);
+        console.log(schoolClass.students);
+
+        //var school = new classicalSchoolSystemNS.School("32 SOU", "Sofia");
+        //school.addClass(schoolClass);
+        //console.log(school.classes);
+
+        // Prototype OOP tests
+        //var student1 = Object.create(prototypeSchoolSystemNS.Student);
+        //student1.init("Ivan", "Ivanov", "19", "2");
+        //console.log(student1.introduce())
+
+        //var student2 = Object.create(prototypeSchoolSystemNS.Student);
+        //student1.init("Georgi", "Ivanov", "17", "5");
+        //console.log(student1.introduce())
+
+        //var teacher = Object.create(prototypeSchoolSystemNS.Teacher);
+        //teacher.init("Petar", "Petrov", "35", "Math");
+        //console.log(teacher.introduce());
+
+        //var schoolClass = Object.create(prototypeSchoolSystemNS.SchoolClass);
+        //schoolClass.init("Math", teacher);
+        //schoolClass.addStudent(student1);
+        //schoolClass.addStudent(student2);
+
+        //var school = Object.create(prototypeSchoolSystemNS.School);
+        //school.init("32 SOU", "Sofia");
+        //school.addClass(schoolClass);
+
+        //console.log(schoolClass.students);
+        //console.log(school.classes);
+    </script>
+</body>
+</html>

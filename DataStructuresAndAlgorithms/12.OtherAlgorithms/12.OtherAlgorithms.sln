@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SumOfCoins", "01.SumOfCoins\01.SumOfCoins.csproj", "{EC9CBF1B-4DA9-4CFC-B9D7-81C44FBB1DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CheckIfPointIsInTriangle", "02.CheckIfPointIsInTriangle\02.CheckIfPointIsInTriangle.csproj", "{1CBED31F-F5B2-4657-8DDE-E49B665FC0AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC9CBF1B-4DA9-4CFC-B9D7-81C44FBB1DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9CBF1B-4DA9-4CFC-B9D7-81C44FBB1DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9CBF1B-4DA9-4CFC-B9D7-81C44FBB1DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9CBF1B-4DA9-4CFC-B9D7-81C44FBB1DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBED31F-F5B2-4657-8DDE-E49B665FC0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBED31F-F5B2-4657-8DDE-E49B665FC0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBED31F-F5B2-4657-8DDE-E49B665FC0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBED31F-F5B2-4657-8DDE-E49B665FC0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

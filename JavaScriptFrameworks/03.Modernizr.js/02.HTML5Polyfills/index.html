@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.0.3.js"></script>
+    <script src="Scripts/modernizr-2.6.2-full.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+    <script>
+        (function myfunction() {
+
+            Modernizr.load({
+                test: Modernizr.canvas,
+                nope: ["Scripts/flashcanvas.js"],
+                complete: function () {
+                    var canvas =  document.getElementById("myCanvas");
+                    var context = canvas.getContext("2d");
+                    context.fillStyle = "#FF0000";
+                    context.fillRect(0, 0, 150, 75);
+                }
+            });
+
+            Modernizr.load({
+                test: Modernizr.localstorage,
+                nope: ["Scripts/storage.js"],
+                complete: function () {
+                    localStorage.setItem("testKey", "some data");
+                    console.log(localStorage.getItem("testKey"));
+                }
+            });
+
+            Modernizr.load({
+                test: Modernizr.geolocation,
+                nope: ["Scripts/geo.js"],
+                complete: function () {
+
+                    function geoSuccess(position) {
+                        console.log("latitude: " + position.coords.latitude);
+                        console.log("longitude: " + position.coords.longitude);
+                    }
+
+                    function geoError() {
+                        console.log(arguments);
+                    }
+
+                    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+                }
+            });
+
+        }());
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@model List<MoviesApplication.ViewModels.MovieModel>
+@{
+    ViewBag.Title = "Home Page";  
+}
+<div class="row">
+    <div class="span5">
+        <h2>Recently added movies</h2>
+    </div>
+</div>
+<div class="row">
+    <ul>
+        @foreach (var movie in Model)
+        {
+            <li>
+                @Html.ActionLink(movie.Title, "Details", "Movies", new { id = movie.Id }, null)
+                <span>Year:@movie.Year Rating:@movie.Rating / 10 </span>
+            </li>
+        }
+    </ul>
+</div>

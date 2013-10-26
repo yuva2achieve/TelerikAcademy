@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.0.2.js"></script>
+</head>
+<body>
+    <input id="addBefore" type="button" value="Add before" />
+    <input id="addAfter" type="button" value="Add after" />
+    <br />
+    <div id="initial"></div>
+    <script>
+        $("#initial").css("width", "200px");
+        $("#initial").css("height", "200px");
+        $("#initial").css("display", "inline-block");
+        $("#initial").css("background", "green");
+
+        function onAddBeforeClick() {
+            var div = document.createElement("div");
+            div.style.width = "200px";
+            div.style.height = "200px";
+            div.style.display = "inline-block";
+            div.style.background = "blue";
+            $("#initial").before(div);
+        }
+
+        function onAddAfterClick() {
+            var div = document.createElement("div");
+            div.style.width = "200px";
+            div.style.height = "200px";
+            div.style.display = "inline-block";
+            div.style.background = "red";
+            $("#initial").after(div);
+        }
+
+        $("#addBefore").on('click', onAddBeforeClick);
+        $("#addAfter").on('click', onAddAfterClick);
+    </script>
+</body>
+</html>

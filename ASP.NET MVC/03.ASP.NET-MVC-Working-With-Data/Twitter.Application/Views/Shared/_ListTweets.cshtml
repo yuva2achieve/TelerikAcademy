@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Twitter.Models.Tweet>
+
+@if (Model.Count() > 0)
+{
+    <div class="row-fluid">
+        <div class="span3"></div>
+        <div class="span6">
+            <ul class="nav nav-list">
+                @foreach (var tweet in Model)
+                {
+                    <li>
+                        <div class="alert alert-info">
+                            <div>
+                                <img src="@tweet.Author.ProfilePicture" width="48" height="48" alt="Alternate Text" />
+                                <strong>@Html.ActionLink(@tweet.Author.FullName, "Profile", "Users", new { username = tweet.Author.UserName }, null)</strong>
+                                <span>&nbsp;@@@tweet.Author.UserName on @tweet.Date</span>
+                            </div>
+                            <p>@Html.Raw(@tweet.Content)</p>
+                            @if (ViewBag.currentUser != null && ViewBag.currentUser.UserName != tweet.Author.UserName)
+                            {
+                                var isInFavorites = ViewBag.currentUser.FavoriteTweets.Contains(tweet);
+                                if (!isInFavorites)
+                                {
+                                    <div>
+                                        @using (Html.BeginForm("AddToFavorites", "Tweets"))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            @Html.Hidden("id", tweet.Id);
+                                            //<input type="submit" value="Add to Favorites" class="btn btn-success" />
+                                            <button class="btn btn-link" type="submit"><span><i class="icon-star"></i>Favorite</span></button>
+                                        }
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </li>                    
+                }
+            </ul>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row-fluid">
+        <div class="span3"></div>
+        <div class="span6">
+            <div>
+                <p>There are no tweets currently.</p>
+            </div>
+        </div>
+    </div>
+}

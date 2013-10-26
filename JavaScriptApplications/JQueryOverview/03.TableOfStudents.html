@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="Scripts/jquery-2.0.2.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var studentsData =
+            [
+                "Petar Ivanov 3",
+                "Ivan Ivanov 5",
+                "Georgi Georgiev 2",
+                "Borislav Petkov 4",
+                "Borislav Petkov 4",
+                "Borislav Petkov 4",
+                "Borislav Petkov 4",
+                "Borislav Petkov 4",
+            ];
+
+        var table = document.createElement("table");
+        var tableHeader =
+            "<thead>" +
+                "<tr>" +
+                    "<th> First name </th>" +
+                    "<th> Last name </th>" +
+                    "<th> Grade </th>" +
+                "</tr>" +
+            "</thead>";
+        table.innerHTML = tableHeader;
+
+
+        for (var i = 0; i < studentsData.length; i++) {
+            var line = studentsData[i];
+            var arguments = line.split(" ");
+            var tr = document.createElement("tr");
+            for (var j = 0; j < arguments.length; j++) {
+
+                var td = document.createElement("td");
+                td.innerText = arguments[j];
+                tr.appendChild(td);
+            }
+
+            table.appendChild(tr);
+        }
+
+        $("#container").append(table);
+    </script>
+</body>
+</html>

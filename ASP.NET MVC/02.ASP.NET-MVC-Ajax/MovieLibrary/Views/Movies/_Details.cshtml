@@ -1,0 +1,23 @@
+﻿@model MovieLibrary.Models.Movie
+
+<h2>MovieDetails</h2>
+<div class="well">
+    <div class="row">
+        <div class="span4">
+            <img class="img-rounded" alt="260x180" style="width: 170px; height: 190px;" src="http://placehold.it/170x190">
+        </div>
+        <div class="span5">
+            <h2>@Model.Title <span>(@Model.Year)</span></h2>
+            <p>
+                Lead male actor:<strong>@Model.LeadMaleActor.Name</strong> (@Model.LeadMaleActor.Age old)
+            </p>
+            <p>
+                Lead female actress:<strong>@Model.LeadFemaleActor.Name</strong> (@Model.LeadFemaleActor.Age old)
+            </p>
+            <p>
+                Directed by <strong>@Model.Director</strong>
+            </p>
+        </div>
+    </div>
+</div>
+

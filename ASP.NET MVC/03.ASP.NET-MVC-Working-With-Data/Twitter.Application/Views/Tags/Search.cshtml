@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Twitter.Models.Tweet>
+
+@{
+    ViewBag.Title = "Search results";
+}
+
+<div class="row-fluid">
+    <div class="span4"></div>
+    <div class="span4"><h2>Result for tag: @ViewBag.tag</h2></div>
+</div>
+@Html.Partial("_ListTweets", Model)
+

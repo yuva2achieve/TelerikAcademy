@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Models", "MusicLibrary.Models\MusicLibrary.Models.csproj", "{DAC7E607-25C1-4AA7-8C79-42D8159D3718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Data", "MusicLibrary.Data\MusicLibrary.Data.csproj", "{63BF01A3-A12C-4C46-AAA5-4AFB300FF35C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Services", "MusicLibrary.Services\MusicLibrary.Services.csproj", "{C800DAF7-F737-4DC7-9A0F-A3E5DA33F903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Client", "MusicLibrary.Client\MusicLibrary.Client.csproj", "{68AE54A0-5670-445C-9D0C-6142927A99AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{43BA6B36-363F-4B68-9766-1C611C4BC317}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC7E607-25C1-4AA7-8C79-42D8159D3718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC7E607-25C1-4AA7-8C79-42D8159D3718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC7E607-25C1-4AA7-8C79-42D8159D3718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC7E607-25C1-4AA7-8C79-42D8159D3718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BF01A3-A12C-4C46-AAA5-4AFB300FF35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BF01A3-A12C-4C46-AAA5-4AFB300FF35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BF01A3-A12C-4C46-AAA5-4AFB300FF35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BF01A3-A12C-4C46-AAA5-4AFB300FF35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C800DAF7-F737-4DC7-9A0F-A3E5DA33F903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C800DAF7-F737-4DC7-9A0F-A3E5DA33F903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C800DAF7-F737-4DC7-9A0F-A3E5DA33F903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C800DAF7-F737-4DC7-9A0F-A3E5DA33F903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68AE54A0-5670-445C-9D0C-6142927A99AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AE54A0-5670-445C-9D0C-6142927A99AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AE54A0-5670-445C-9D0C-6142927A99AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AE54A0-5670-445C-9D0C-6142927A99AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.0.2.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <input id="colorSelector" type="color" />
+    </div>
+    <script>
+        function onColorChange() {
+            var color = $("#colorSelector").val();
+            $("body").css("background", color);
+        }
+
+        $("#colorSelector").on("change", onColorChange);
+    </script>
+</body>
+</html>

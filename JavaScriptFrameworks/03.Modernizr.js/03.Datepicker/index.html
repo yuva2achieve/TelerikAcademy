@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="Scripts/modernizr-2.6.2-full.js"></script>
+</head>
+<body>
+    <label for="datepicker">Pick date: </label>
+    <input type="date" id="datepicker" />
+    <script>
+        $(function () {
+            Modernizr.load({
+                test: Modernizr.inputtypes.date,
+                nope: ["//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js", "Styles/jquery-ui.css"],
+                complete: function () {
+                    $("input[type=date]").datepicker();
+                }
+            })
+        })
+    </script>
+</body>
+</html>

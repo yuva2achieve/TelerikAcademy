@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image slider</title>
+    <script src="Scripts/jquery-2.0.2.js"></script>
+    <script src="Scripts/sliderControl.js"></script>
+</head>
+<body>
+    <input id="prev" type="button" value="Previous" />
+    <input id="next" type="button" value="Next" />
+    <input id="slideshow" type="button" value="Start Slideshow" />
+    <div id="slider-container"></div>
+    <script>
+        var slider = Object.create(sliderControl.Slider);
+        slider.init("#slider-container");
+        function onPrevClick() {
+            slider.previous();
+        }
+
+        function onNextClick() {
+            slider.next();
+        }
+
+        function onSlideshowClick() {
+            slider.slideshow();
+        }
+        $("#prev").on("click", onPrevClick);
+        $("#next").on("click", onNextClick);
+        $("#slideshow").on("click", onSlideshowClick);
+    </script>
+</body>
+</html>

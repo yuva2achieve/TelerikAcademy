@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MoviesApplication.Models.MovieReview>
+
+<div>
+    <h4>Reviews</h4>
+    <ul class="movie-reviews">
+        @foreach (var rev in Model)
+        {
+            <li>
+                <div class="well">
+                    <span>Rating: @rev.Rating</span>
+                    <p>
+                        @rev.Body
+                    </p>
+                    <span>Posted by @rev.Author.UserName on @rev.Date</span>
+                    @Html.ActionLink("Edit", "Edit", "Reviews", new { movieId = rev.MovieId, id = rev.Id }, new { @class = "btn" })
+                    @Html.ActionLink("Delete", "Delete", "Reviews", new { movieId = rev.MovieId, id = rev.Id }, new { @class = "btn" })
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+

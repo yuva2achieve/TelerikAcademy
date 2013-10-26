@@ -1,0 +1,26 @@
+﻿@using Twitter.Models;
+@model IEnumerable<ApplicationUser>
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>Avatar</th>
+            <th>Username</th>
+            <th>Full name</th>
+            <th>Tweets count</th>
+            <th>Followers count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td><img src="@user.ProfilePicture" width="37" height="37" /></td>
+                <td>@Html.ActionLink(@user.UserName, "Profile", new { username = @user.UserName })</td>
+                <td>@user.FullName</td>
+                <td>@user.Tweets.Count</td>
+                <td>@user.Followers.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,2 @@
+Admin acc:  admin/123456
+Admin area: /administration/movies/all

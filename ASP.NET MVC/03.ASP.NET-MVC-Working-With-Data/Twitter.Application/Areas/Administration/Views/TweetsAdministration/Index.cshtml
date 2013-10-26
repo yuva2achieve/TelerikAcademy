@@ -1,0 +1,27 @@
+﻿@using Twitter.Application.Areas.Administration.Models;
+
+@{
+    ViewBag.Title = "Tweets Administration";
+}
+
+@(Html.Kendo().Grid<TweetAdministrationModel>().Name("TweetsGrid").Columns(col =>
+    {
+        col.Bound(t => t.Content).Sortable(true);
+        col.Bound(t => t.Date).Format("{0:dd/MM/yyyy H:MM:ss tt}").Sortable(true).EditorTemplateName("TweetDateTemplate");;
+        col.Command(command => { command.Edit(); command.Destroy(); }).Width(180);
+    })
+        .ToolBar(toolbar => toolbar.Create())
+        .Pageable()
+        .Sortable()
+        .Groupable()
+        .Filterable()
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .PageSize(10)
+            .Model(model => model.Id(p => p.Id))
+            .Read(read => read.Action("Read", "TweetsAdministration"))
+                .Create(create => create.Action("Create", "TweetsAdministration"))
+                    .Update(update => update.Action("Update", "TweetsAdministration"))
+                    .Destroy(destroy => destroy.Action("Destroy", "TweetsAdministration"))
+        )
+)

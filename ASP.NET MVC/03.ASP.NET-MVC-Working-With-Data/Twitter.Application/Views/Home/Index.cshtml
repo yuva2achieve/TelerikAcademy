@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Twitter.Models.Tweet>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row-fluid">
+    <div class="span5"></div>
+    <div class="span4"><h2>Latest tweets</h2></div>
+</div>
+
+@Html.Partial("_ListTweets", Model)

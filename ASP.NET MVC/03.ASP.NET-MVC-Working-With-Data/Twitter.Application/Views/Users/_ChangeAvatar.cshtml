@@ -1,0 +1,17 @@
+﻿<div class="progress">
+    <div class="bar" style="width:0%"></div>
+</div>
+
+@using (Html.BeginForm("ChangeAvatar", "Users",
+                         FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" }))
+{
+    @(Html.Kendo().Upload()
+        .Name("files")
+        .Multiple(false)
+        .Events(ev => ev
+            .Progress("onProgress")
+        )
+    )
+
+    <input type="submit" value="Send" class="t-button" />
+}

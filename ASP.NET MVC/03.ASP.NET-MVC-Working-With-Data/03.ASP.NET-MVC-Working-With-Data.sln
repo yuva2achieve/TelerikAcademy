@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Models", "Twitter.Models\Twitter.Models.csproj", "{D1918F0D-AB69-485F-8D4F-2B80E5BE89A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Data", "Twitter.Data\Twitter.Data.csproj", "{25EB808A-383C-4D52-B4BE-B713F1D5902E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Application", "Twitter.Application\Twitter.Application.csproj", "{94E41719-865B-4E62-8536-5ED68FE884D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A34FC151-8134-4CD5-9476-66F0A0517C4A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Tests", "Twitter.Tests\Twitter.Tests.csproj", "{E55AF239-41FD-42F6-AE7F-77D12CA8BB15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1918F0D-AB69-485F-8D4F-2B80E5BE89A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1918F0D-AB69-485F-8D4F-2B80E5BE89A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1918F0D-AB69-485F-8D4F-2B80E5BE89A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1918F0D-AB69-485F-8D4F-2B80E5BE89A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EB808A-383C-4D52-B4BE-B713F1D5902E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EB808A-383C-4D52-B4BE-B713F1D5902E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25EB808A-383C-4D52-B4BE-B713F1D5902E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25EB808A-383C-4D52-B4BE-B713F1D5902E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E41719-865B-4E62-8536-5ED68FE884D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E41719-865B-4E62-8536-5ED68FE884D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E41719-865B-4E62-8536-5ED68FE884D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E41719-865B-4E62-8536-5ED68FE884D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55AF239-41FD-42F6-AE7F-77D12CA8BB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55AF239-41FD-42F6-AE7F-77D12CA8BB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55AF239-41FD-42F6-AE7F-77D12CA8BB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55AF239-41FD-42F6-AE7F-77D12CA8BB15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

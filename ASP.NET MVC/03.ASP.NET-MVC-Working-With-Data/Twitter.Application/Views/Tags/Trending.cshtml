@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Twitter.Application.Models.HashTagViewModel>
+
+@{
+    ViewBag.Title = "Trending tags";
+}
+
+<div class="row-fluid">
+    <div class="span3"></div>
+    <div class="span6">
+        @if (Model.Count() > 0)
+        {
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Tweets Count</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var hashTag in Model)
+                    {
+                        <tr>
+                            <td>@hashTag.Name</td>
+                            <td>@hashTag.TweetsCount</td>
+                            <td><a class="btn btn-primary" href="@Url.Action("Search", new { id = hashTag.Id })"><span><i class="icon-search"></i>Find Tweets</span></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>There are no tags yet!</p>
+        }
+    </div>
+</div>
+
