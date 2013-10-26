@@ -17,6 +17,7 @@ Please define and implement the following object-oriented assets in your project
 You might read about design patterns in Wikipedia, Sourcemaking, DoFactory and others.
 
 Additional Requirements
+----------------------
 *	Follow the best practices for OO design: use data encapsulation, use exception handling properly, use delegates and events like it is recommended in MSDN, use inheritance, abstraction and polymorphism properly, follow the principles of strong cohesion and loose coupling.
 *	Obligatory use Team Foundation Server (TFS) to keep your source code and for team collaboration. SVN or Git are not allowed. Use TFS.
 *	Provide a class diagram (to visualize all types).
