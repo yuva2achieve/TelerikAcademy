@@ -1,6 +1,13 @@
 JavaScript Applications TeamWork:
 ==========================
 
+Created By:
+-----------
+* Alexander Polichronov
+* Borislav Jivkov
+* Delian Dimitrov
+* Nikolay Naidenov
+
 Description:
 ------------
 Web application that supports creating of universities and adding students to them.

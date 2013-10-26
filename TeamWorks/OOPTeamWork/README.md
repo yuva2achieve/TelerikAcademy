@@ -1,6 +1,11 @@
 Object Oriented Programming TeamWork:
 ==========================
 
+Created By:
+-----------
+* Borislav Jivkov
+* Ventsislav Staykov
+
 Technologies used:
 ------------------
 * C#

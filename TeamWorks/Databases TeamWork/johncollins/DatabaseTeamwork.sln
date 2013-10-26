@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92B8E2F5-2B81-42E7-AA0D-610129B7EAB7}"
+	ProjectSection(SolutionItems) = preProject
+		VendorsTotalReport.db = VendorsTotalReport.db
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketReports.Client", "SuperMarketReports.Client\SuperMarketReports.Client.csproj", "{725C7F15-9FB2-4ECD-9BA5-C0176334D857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Model", "Product.Model\Product.Model.csproj", "{C50145E6-A244-4F1F-B41F-90D1925B4A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Model", "Supermarket.Model\Supermarket.Model.csproj", "{248FF712-3218-4991-A524-F67384991ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxes.Model", "Taxes.Model\Taxes.Model.csproj", "{4E4B182D-01C7-4509-BDBA-07CFEBEA09C1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs22
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SuperMarketReports.Client\\SuperMarketReports.Client.csproj
+		SccProjectName1 = SuperMarketReports.Client
+		SccLocalPath1 = SuperMarketReports.Client
+		SccProjectUniqueName2 = Product.Model\\Product.Model.csproj
+		SccProjectName2 = Product.Model
+		SccLocalPath2 = Product.Model
+		SccProjectUniqueName3 = Supermarket.Model\\Supermarket.Model.csproj
+		SccProjectName3 = Supermarket.Model
+		SccLocalPath3 = Supermarket.Model
+		SccProjectUniqueName4 = Taxes.Model\\Taxes.Model.csproj
+		SccProjectName4 = Taxes.Model
+		SccLocalPath4 = Taxes.Model
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{725C7F15-9FB2-4ECD-9BA5-C0176334D857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725C7F15-9FB2-4ECD-9BA5-C0176334D857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725C7F15-9FB2-4ECD-9BA5-C0176334D857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725C7F15-9FB2-4ECD-9BA5-C0176334D857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248FF712-3218-4991-A524-F67384991ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248FF712-3218-4991-A524-F67384991ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248FF712-3218-4991-A524-F67384991ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248FF712-3218-4991-A524-F67384991ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4B182D-01C7-4509-BDBA-07CFEBEA09C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4B182D-01C7-4509-BDBA-07CFEBEA09C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4B182D-01C7-4509-BDBA-07CFEBEA09C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4B182D-01C7-4509-BDBA-07CFEBEA09C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

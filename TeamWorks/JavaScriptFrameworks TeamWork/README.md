@@ -1,6 +1,14 @@
 JavaScript Applications TeamWork:
 ==========================
 
+Created By:
+-----------
+* Boris Penev
+* Borislav Jivkov
+* Dimitar Todorov
+* Lina Ivanova
+* Petar Vanev
+
 Description:
 ------------
 Web application that supports creating of adding, editing and deleting automorgues and autoparts. The application supports admin and user accounts.
