@@ -1,5 +1,10 @@
 Object Oriented Programming TeamWork:
 ==========================
+
+Technologies used:
+------------------
+* C#
+
 Project Description
 -------------------
 Design and implement an object-oriented application by choice. It could be a simple game (e.g. Minesweeper, Tetris, Xonix or other), component library (windows, buttons, text boxes, menus, etc.), business application (e.g. car store, auction, movie rental, bug tracker, knowledge management system, e-library, text editor), or any other. You are absolutely free to choose the topic of your work.
