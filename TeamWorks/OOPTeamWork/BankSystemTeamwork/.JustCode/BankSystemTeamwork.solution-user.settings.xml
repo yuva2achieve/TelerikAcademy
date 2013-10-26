@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="bc6b75e6-8055-4915-9e30-f8ebc623b02a">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>E:\Telerik Academy\Visual Studio Projects\TeamShrek\BankSystemTeamwork\BankSystem\BankAccount.cs</Path>
+        <ProjectFullName>E:\Telerik Academy\Visual Studio Projects\TeamShrek\BankSystemTeamwork\BankSystem\BankSystem.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>26</Column>
+          <Text>Field &lt;/C&gt;owner&lt;//C&gt; can be made readonly</Text>
+          <Line>12</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>
