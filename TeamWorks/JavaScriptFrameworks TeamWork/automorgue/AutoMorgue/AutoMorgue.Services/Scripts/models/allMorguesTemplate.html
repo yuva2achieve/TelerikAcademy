@@ -1,0 +1,22 @@
+﻿<form class="form-search">
+  Search: <input type="text" class="input-medium search-query" ng-model="query">
+</form>
+<table class="table table-striped table-hover">
+<tr>
+    <th><a href="" ng-click="predicate = 'Name'; reverse=false">Name</a>
+        (<a href ng-click="predicate = '-Name'; reverse=false">^</a>)</th>
+    <th><a href="" ng-click="predicate = 'Location.City'; reverse=!reverse">Location</a></th>
+    <th><a href="" ng-click="predicate = 'PhoneNumber'; reverse=!reverse">Phone Number</a></th>
+    <th><a href="" ng-click="predicate = 'WorkTime'; reverse=!reverse">Work time</a></th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+</tr>
+<tr ng-repeat="morgue in morgues | filter:query | orderBy:predicate:reverse">
+    <td>{{morgue.Name}}</td>
+    <td><a href="#/morgues/location/{{morgue.Location}}">{{morgue.Location}}</a></td>
+    <td>{{morgue.PhoneNumber}}</td>
+    <td>{{morgue.WorkTime}}</td>
+    <td><a href="#/autoparts/add" class="btn">Add part</a></td>
+    <td><a href="#/autoparts/{{morgue.Id}}" class="btn" ng-click="getPartsByMorgueId()">View auto parts</a></td>
+</tr>
+</table>

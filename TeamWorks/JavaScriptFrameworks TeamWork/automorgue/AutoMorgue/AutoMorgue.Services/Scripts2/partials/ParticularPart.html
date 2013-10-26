@@ -1,0 +1,20 @@
+﻿<h1>Part</h1>
+
+<div data-template="part-template" data-bind="source: particularPart">
+</div>
+ 
+<script type="text/x-kendo-template" id="part-template">
+    <div>
+    <span>Morgue name: </span>
+        <strong><span data-bind="text: MorgueName"></span></strong><br/>
+    <span>Name: </span>
+        <strong><span data-bind="text: Name"></span></strong><br/>
+    <span>Price: </span>
+        <strong><span data-bind="text: Price"></span></strong><br/>
+    <span>Quantity: </span>
+        <strong><span data-bind="text: Quantity"></span></strong><br/>
+    <span>Category: </span>
+        <strong><span data-bind="text: Category"></span></strong><br/>
+    <button data-bind="click: sale">Sale</button>
+    </div>
+</script>

@@ -1,0 +1,43 @@
+﻿<div class="well">
+    <fieldset>
+        <legend>Create new morgue</legend>
+        <div id="error-container" class="alert alert-block alert-error fade in" style="display:none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4 class="alert-heading">Oh snap! You got an error!</h4>
+            <p id="error-message"></p>
+        </div>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="inputMorgueName">Morgue name</label>
+                <div class="controls">
+                    <input class="input-large" type="text" id="inputMorgueName" required="required" placeholder="MorgueName" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputLocation">Location</label>
+                <div class="controls">
+                    <input class="input-large" type="text" id="inputLocation" required="required" placeholder="Location" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputPhoneNumber">Phone number</label>
+
+                <div class="controls">
+                    <input class="input-large" type="text" id="inputPhoneNumber" required="required" placeholder="0896755555" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputWorkTime">Work Time</label>
+
+                <div class="controls">
+                    <input class="input-large" type="text" id="inputWorkTime" required="required" placeholder="Monday-Friday 9:00 - 17:00" />
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button id="register" type="submit" class="btn btn-primary btn-large" ng-click="createMorgue()">Create</button>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+</div>

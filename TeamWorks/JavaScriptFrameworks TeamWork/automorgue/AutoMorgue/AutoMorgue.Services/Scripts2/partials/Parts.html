@@ -1,0 +1,13 @@
+﻿
+<h1>Parts</h1>
+
+<ul data-template="parts-template" data-bind="source: parts">
+</ul>
+ 
+<script type="text/x-kendo-template" id="parts-template">
+    <li>
+    <span>Name: </span>
+        <a  data-bind="click: getPerticularPart,attr: { id: Id}"><span data-bind="text: Name"></span></a>
+    </li>
+</script>
+<div id="image"></div>

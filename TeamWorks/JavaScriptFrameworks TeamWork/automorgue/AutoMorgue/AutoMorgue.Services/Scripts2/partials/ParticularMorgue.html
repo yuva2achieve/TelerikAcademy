@@ -1,0 +1,36 @@
+﻿<h1>Morgue</h1>
+
+<div data-template="morgue-template" data-bind="source: particularMorgue">
+</div>
+ 
+<script type="text/x-kendo-template" id="morgue-template">
+    <div id="morgue">
+    <span>Morgue name: </span>
+        <strong><span data-bind="text: Name"></span></strong><br/>
+    <span>Phone number: </span>
+        <strong><span data-bind="text: PhoneNumber"></span></strong><br/>
+    <span>Work time: </span>
+        <strong><span data-bind="text: WorkTime"></span></strong><br/>
+    <span>Location: </span>
+        <strong><span data-bind="text: Location"></span></strong><br/>
+    </div>
+    <div data-template="morgue-template" data-bind="source: parts">
+</div>
+</script>
+
+<h3>Parts</h3>
+<ul data-template="parts-template" data-bind="source: particularMorgue.Parts">
+   
+</ul>
+ 
+<script type="text/x-kendo-template" id="parts-template">
+    <li class="partsInMorgue">
+    <span>Part name: </span>
+        <strong><span data-bind="text: Name"></span></strong><br/>
+    <span>Price: </span>
+        <strong><span data-bind="text: Price"></span></strong><br/>
+    <span>Quantity: </span>
+        <strong><span data-bind="text: Quantity"></span></strong><br/>
+  
+    </li>
+</script>

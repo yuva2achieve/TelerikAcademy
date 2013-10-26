@@ -1,0 +1,29 @@
+﻿<div class="well">
+    <fieldset>
+        <legend>Login as existing admin</legend>
+        <div id="error-container" class="alert alert-block alert-error fade in" style="display:none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4 class="alert-heading">Oh snap! You got an error!</h4>
+            <p id="error-message"></p>
+        </div>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="inputUsername">Username</label>
+                <div class="controls">
+                    <input class="input-large" type="text" id="inputUsername" required="required" placeholder="Username">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputPassword">Password</label>
+                <div class="controls">
+                    <input class="input-large" type="password" id="inputPassword" required="required" placeholder="Password">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button id="login" type="submit" class="btn btn-primary btn-large" ng-click="loginUser()">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+</div>

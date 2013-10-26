@@ -1,0 +1,86 @@
+﻿body {
+   background-color:#f7f4c0
+   
+}
+  #action-button{
+            width:60px;
+            display:block;
+            margin-left:70px;   
+           
+        }
+        #actions {
+            border:1px solid black;
+            width :200px;
+            text-align:center;  
+            margin-bottom:15px;
+            border-radius:15px;
+            position:relative;
+            margin-left:1150px;
+        }
+        fieldset {
+            width:600px;
+            height:150px;
+            
+        }
+        #loginDiv {
+            position:relative;
+        }
+         input {
+            margin-left:10px;
+        }
+        #registerDiv {
+            position:absolute;
+            top:20px;
+            left: 300px;
+        }
+        #navigation {
+            border:1px solid black;
+            padding-top:15px;
+              border-radius:15px;
+              margin-left:400px;
+              width:500px;
+              height:35px;
+              background-color:#f7b984;
+
+        }
+            #navigation > div {
+                
+                text-align:center;
+            }
+  #navigation > div > a{
+                text-decoration:none;
+                color:black;
+                border:1px solid black;
+                background-color: #ffe6ab;
+                margin:10px;
+                padding:10px;
+                margin-left:0px;
+                margin-right:2px;
+            }
+        body {
+            position:relative;
+        }
+        #main-content {
+            position:absolute;
+            left:480px;
+        }
+        .partsInMorgue {
+            border:1px solid black;
+            list-style-type:none;
+            width:200px;
+        }
+        a{
+            cursor:pointer;
+        }
+#image {
+    border:1px solid black;
+    width:170px;
+    height:130px;
+    background-image:url("/cssImags/avtomontior.jpg");
+    position:absolute;
+    left:-180px;
+    top:30px;
+}
+li {
+    list-style-type:none;
+}
