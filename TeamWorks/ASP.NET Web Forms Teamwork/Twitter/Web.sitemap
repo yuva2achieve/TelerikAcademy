@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="Home" description="Home Page" url="~/Default" >
+    <siteMapNode title="About" description="About Page" url="~/About" />
+    <siteMapNode title="Channels" description="Channels Page" url="~/TwitterChannels" >
+      <siteMapNode title="Mine" description="My Channels" url="~/Channels/Mine" >
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="My Messages" description="My Messages" url="~/Messages/MyMessages" />
+    <siteMapNode title="Contacts" description="Contacts Page" url="~/Contact" />
+    <siteMapNode title="Users" description="All Users Page" url="~/Users">
+      <siteMapNode title="Following" description="Following Page" url="~/TwitterUsers/Friends" />
+      <siteMapNode title="Followers" description="Followers Page" url="~/TwitterUsers/Followers" />
+    </siteMapNode>
+    <siteMapNode title="Admin" description="All Users Page" >
+      <siteMapNode title="Users" description="Admin Users" url="~/Admin/Users" />
+      <siteMapNode title="Channels" description="Admin Channels" url="~/Admin/Channels" />
+      <siteMapNode title="Messages" description="Admin Messages" url="~/Admin/Messages" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

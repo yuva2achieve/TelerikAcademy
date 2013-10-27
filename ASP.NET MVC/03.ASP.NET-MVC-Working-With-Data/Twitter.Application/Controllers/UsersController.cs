@@ -36,6 +36,11 @@ namespace Twitter.Application.Controllers
         {
             var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
 
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
             foreach (var item in user.Tweets)
             {
                 item.Content = base.ReplaceTagsInContent(item);
@@ -102,7 +107,14 @@ namespace Twitter.Application.Controllers
         [Authorize]
         public ActionResult Tweets(string username)
         {
-            var userTweeets = this.Data.Users.Where(u => u.UserName == username).Select(u => u.Tweets).FirstOrDefault();
+            var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
+            var userTweeets = user.Tweets;
 
             foreach (var item in userTweeets)
             {
@@ -116,7 +128,14 @@ namespace Twitter.Application.Controllers
         [Authorize]
         public ActionResult Favorites(string username)
         {
-            var userFavoriteTweeets = this.Data.Users.Where(u => u.UserName == username).Select(u => u.FavoriteTweets).FirstOrDefault();
+            var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
+            var userFavoriteTweeets = user.FavoriteTweets;
 
             foreach (var item in userFavoriteTweeets)
             {
@@ -130,7 +149,14 @@ namespace Twitter.Application.Controllers
         [Authorize]
         public ActionResult Following(string username)
         {
-            var usersFollowing = this.Data.Users.Where(u => u.UserName == username).Select(u => u.Following).FirstOrDefault();
+            var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
+            var usersFollowing = user.Following;
             
             return PartialView("_ListUsers", usersFollowing);
         }
@@ -139,7 +165,14 @@ namespace Twitter.Application.Controllers
         [Authorize]
         public ActionResult Followers(string username)
         {
-            var usersFollowers = this.Data.Users.Where(u => u.UserName == username).Select(u => u.Followers).FirstOrDefault();
+            var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
+            var usersFollowers = user.Followers;
 
             return PartialView("_ListUsers", usersFollowers);
         }
@@ -150,7 +183,13 @@ namespace Twitter.Application.Controllers
         public ActionResult Follow(string username)
         {
             var currentUser = this.Data.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+
             var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
             currentUser.Following.Add(user);
             user.Followers.Add(currentUser);
             this.Data.SaveChanges();
@@ -163,7 +202,13 @@ namespace Twitter.Application.Controllers
         public ActionResult StopFollowing(string username)
         {
             var currentUser = this.Data.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+
             var user = this.Data.Users.FirstOrDefault(u => u.UserName == username);
+            if (user == null)
+            {
+                return new HttpNotFoundResult("There is no user with username: " + username);
+            }
+
             currentUser.Following.Remove(user);
             user.Followers.Remove(currentUser);
             this.Data.SaveChanges();

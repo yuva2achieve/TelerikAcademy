@@ -35,7 +35,7 @@ namespace Twitter.Tests.MoqHelpers
             context.SetupGet(x => x.Request).Returns(request.Object);
             context.SetupGet(x => x.Response).Returns(response.Object);
 
-            context.SetupGet(ctx => ctx.User.Identity.Name).Returns("Admin");
+            context.SetupGet(ctx => ctx.User.Identity.Name).Returns("admin");
             context.SetupGet(ctx => ctx.User.Identity.IsAuthenticated).Returns(true);
             context.SetupGet(ctx => ctx.Cache).Returns(HttpRuntime.Cache);
 

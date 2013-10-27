@@ -42,8 +42,8 @@ namespace Twitter.Tests
 
             Mock<IRepository<ApplicationUser>> usersRepository = new Mock<IRepository<ApplicationUser>>();
             usersRepository.Setup(x => x.All(null)).Returns(Users.AsQueryable());
-            usersRepository.Setup(x => x.FirstOrDefault(It.IsAny<Expression<Func<ApplicationUser, bool>>>())).Returns(this.User);
-
+            usersRepository.Setup(x => x.FirstOrDefault(It.IsAny<Func<ApplicationUser, bool>>())).Returns((Func<ApplicationUser, bool> predicate) => this.Users.FirstOrDefault(predicate));
+            
             Mock<IUowData> uowData = new Mock<IUowData>();
             uowData.SetupGet(x => x.HashTags).Returns(hashTagsRepository.Object);
             uowData.SetupGet(x => x.Tweets).Returns(tweetsRepository.Object);
@@ -92,6 +92,11 @@ namespace Twitter.Tests
                 new Tweet(){ Id = 2, Content = "Tweet 3", Author = this.User, Date = new DateTime(2013, 10, 18, 18, 0, 0) },
                 new Tweet(){ Id = 3, Content = "Tweet 4", Author = this.User, Date = new DateTime(2013, 10, 18, 18, 20, 0) }
             };
+
+            this.User.Tweets.Add(this.Tweets[0]);
+            this.User.Tweets.Add(this.Tweets[1]);
+            this.User.Tweets.Add(this.Tweets[2]);
+            this.User.Tweets.Add(this.Tweets[3]);
         }
 
         private void ConnectHashTagsAndTweets()

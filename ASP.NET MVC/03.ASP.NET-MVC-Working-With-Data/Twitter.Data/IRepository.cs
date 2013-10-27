@@ -11,7 +11,7 @@ namespace Twitter.Data
 
         IQueryable<T> Where(Expression<Func<T, bool>> predicate);
 
-        T FirstOrDefault(Expression<Func<T, bool>> predicate);
+        T FirstOrDefault(Func<T, bool> predicate);
 
         T GetById(object id);
 

@@ -106,7 +106,7 @@ namespace Twitter.Data
             entry.State = EntityState.Detached;
         }
 
-        public virtual T FirstOrDefault(Expression<Func<T, bool>> predicate)
+        public virtual T FirstOrDefault(Func<T, bool> predicate)
         {
             return this.DbSet.FirstOrDefault(predicate);
         }
