@@ -1,0 +1,66 @@
+﻿@model WebApplicationCertificateUserSystem.Models.PublicCourseModel
+
+<fieldset>
+    <legend>PublicCourseModel</legend>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LecturerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LecturerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enrolled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enrolled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrolledCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnrolledCount)
+        </dd>
+
+    </dl>
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "ShowProfile")
+</p>

@@ -1,0 +1,19 @@
+﻿@model WebApplicationCertificateUserSystem.Areas.Administration.Models.EditCertificateCoursesModel
+@using (Html.BeginForm("EditCourse", "CertificatesAdmin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Enrollment</legend>
+        <div class="control-group">
+            <div class="controls">
+                @Html.Hidden("Id", Model.Id)
+                @Html.Kendo().DropDownList().Name("CourseId").BindTo(Model.Courses).DataTextField("Title").DataValueField("Id")
+            </div>
+        </div>
+        <div class="form-actions no-color">
+            <input type="submit" value="Add/Remove" class="btn" />
+        </div>
+    </fieldset>
+}
