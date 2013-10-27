@@ -95,10 +95,16 @@ namespace Twitter.Application.Controllers
                 if (result.Success)
                 {
                     var defaultRole = await IdentityManager.Roles.FindRoleByNameAsync("User");
+                    var adminRole = await IdentityManager.Roles.FindRoleByNameAsync("Admin");
 
                     if (defaultRole == null)
                     {
                         await IdentityManager.Roles.CreateRoleAsync(new Role("User"));
+                    }
+
+                    if (adminRole == null)
+                    {
+                        await IdentityManager.Roles.CreateRoleAsync(new Role("Admin"));
                     }
 
                     await IdentityManager.Roles.AddUserToRoleAsync(user.Id, defaultRole.Id);

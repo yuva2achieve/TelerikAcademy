@@ -49,32 +49,6 @@ namespace Twitter.Application.Areas.Administration.Controllers
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Create([DataSourceRequest] DataSourceRequest request, TweetAdministrationModel model)
-        {
-            var newModel = model;
-
-            if (model != null && ModelState.IsValid)
-            {
-                var hashTags = this.Data.HashTags.All().ToList();
-                var author = this.Data.Users.FirstOrDefault(x => x.UserName == User.Identity.Name);
-                var newTweet = new Tweet() 
-                { 
-                    Content = model.Content,
-                    Date = model.Date,
-                    Author = author,
-                    HashTags = base.GetTagsFromContent(model.Content, hashTags)
-                };
-
-                this.Data.Tweets.Add(newTweet);
-                this.Data.SaveChanges();
-
-                newModel = this.FromTweet(newTweet);
-            }
-
-            return Json(new[] { newModel }.ToDataSourceResult(request, ModelState));
-        }
-
-        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Update([DataSourceRequest] DataSourceRequest request, TweetAdministrationModel model)
         {
             var newModel = model;

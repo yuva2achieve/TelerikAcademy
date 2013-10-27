@@ -68,6 +68,12 @@ namespace Twitter.Application.Controllers
         public ActionResult AddToFavorites(int id)
         {
             var tweet = this.Data.Tweets.GetById(id);
+
+            if (tweet == null)
+            {
+                return new HttpNotFoundResult("There is no such tweet");
+            }
+
             var user = this.Data.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
             user.FavoriteTweets.Add(tweet);
             this.Data.SaveChanges();
