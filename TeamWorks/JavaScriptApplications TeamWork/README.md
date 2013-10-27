@@ -3,10 +3,11 @@ JavaScript Applications TeamWork:
 
 Created By:
 -----------
-* Alexander Polichronov
+* Boris Penev
 * Borislav Jivkov
-* Delian Dimitrov
-* Nikolay Naidenov
+* Dimitar Todorov
+* Lina Ivanova
+* Petar Vanev
 
 Description:
 ------------

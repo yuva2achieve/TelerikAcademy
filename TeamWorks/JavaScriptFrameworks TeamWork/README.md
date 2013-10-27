@@ -1,13 +1,12 @@
-JavaScript Applications TeamWork:
+JavaScript Frameworks TeamWork:
 ==========================
 
 Created By:
 -----------
-* Boris Penev
+* Alexander Polichronov
 * Borislav Jivkov
-* Dimitar Todorov
-* Lina Ivanova
-* Petar Vanev
+* Delian Dimitrov
+* Nikolay Naidenov
 
 Description:
 ------------
